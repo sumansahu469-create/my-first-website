@@ -1,9 +1,163 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <tittle>Pagalpanti</tittle>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Portfolio</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: linear-gradient(135deg, #0a3d91, #1e90ff);
+        color:white;
+    }
+
+    header{
+        text-align:center;
+        padding:60px 20px;
+    }
+
+    header h1{
+        font-size:3rem;
+    }
+
+    header p{
+        margin-top:10px;
+        font-size:1.2rem;
+    }
+
+    nav{
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        padding:15px;
+        background:rgba(255,255,255,0.1);
+        backdrop-filter:blur(10px);
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    section{
+        max-width:1000px;
+        margin:auto;
+        padding:50px 20px;
+    }
+
+    .card{
+        background:rgba(255,255,255,0.15);
+        padding:25px;
+        border-radius:15px;
+        margin-bottom:25px;
+        box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    h2{
+        margin-bottom:15px;
+        color:#ffffff;
+    }
+
+    .skills{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .skill{
+        background:#ffffff;
+        color:#0a3d91;
+        padding:8px 15px;
+        border-radius:20px;
+        font-weight:bold;
+    }
+
+    footer{
+        text-align:center;
+        padding:20px;
+        background:rgba(0,0,0,0.2);
+    }
+
+    .btn{
+        display:inline-block;
+        margin-top:15px;
+        padding:10px 20px;
+        background:white;
+        color:#0a3d91;
+        text-decoration:none;
+        border-radius:8px;
+        font-weight:bold;
+    }
+</style>
 </head>
-  <body> kivani is fully made he loved anshika and sataniya 
-   
-  </body>
-<html>
+
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Freelancer</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a passionate developer who creates modern,
+            responsive, and user-friendly websites. I enjoy building
+            professional digital experiences.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Bootstrap</span>
+            <span class="skill">React</span>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <p><strong>Portfolio Website</strong> - Professional personal website.</p>
+        <p><strong>E-Commerce Site</strong> - Online shopping platform.</p>
+        <p><strong>Business Landing Page</strong> - Modern company website.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: yourname@example.com</p>
+        <p>Phone: +91 9876543210</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Your Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
